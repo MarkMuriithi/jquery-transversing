@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+$("li").parent().css({"color":"red","border":"2px solid red"});
+});
+</script>
+	<title>jQuery Transervals Example</title>
+</head>
+<style>
+.ancestors *{
+display: block;
+border: 2px solid #439A86;
+color: #439A86;
+padding: 5px;
+margin: 15px;
+}
+</style>
+<body>
+<div class="ancestors">
+<div style="width: 720px">
+div (great.grandparents)
+<ul>ul (grandparent)
+<li>li (direct parents)
+<span>span (children)</span>
+</li>
+</ul>
+</div>
+</div>
+
+</body>
+</html>
